@@ -18,6 +18,11 @@ app.use(cors({
 app.use(express.json({ limit: "2mb" }));
 app.use(cookieParser())
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Ancent E-commerce API is running successfully🚀');
+});
+
 app.use("/api", router)
 
 const PORT = 8080 || process.env.PORT
