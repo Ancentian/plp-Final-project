@@ -1,12 +1,11 @@
-const displayINRCurrency = (num) => {
-    const formatter = new Intl.NumberFormat('en-IN',{
-        style : "currency",
-        currency : 'INR',
-        minimumFractionDigits : 2
-    })
+const displayKESCurrency = (num) => {
+  const formatter = new Intl.NumberFormat('en-KE', {
+    style: 'currency',
+    currency: 'KES',
+    minimumFractionDigits: 2,
+  });
 
-    return formatter.format(num)
+  return formatter.format(num).replace('KES', 'Sh');
+};
 
-}
-
-export default displayINRCurrency
+export default displayKESCurrency;
