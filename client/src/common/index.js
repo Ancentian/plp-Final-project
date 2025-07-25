@@ -58,7 +58,19 @@ const SummaryApi = {
         method : 'get'
     },
     addToCartProductView : {
-        url : `${backendDomain}/api/view-card-product`,
+        url : `${backendDomain}/api/view-cart-product`,
+        method : 'get'
+    },
+    updateCartProduct : {
+        url : `${backendDomain}/api/update-cart-product`,
+        method : 'post'
+    },
+    deleteCartProduct : {
+        url : `${backendDomain}/api/delete-cart-product`,
+        method : 'post'
+    },
+    searchProduct : {
+        url : `${backendDomain}/api/search`,
         method : 'get'
     }
 
